@@ -34,6 +34,7 @@ class SiteController extends BaseController
      */
     public function actionIndex()
     {
+        echo 'bbb';
 //        return $this->render('index');
     }
 
