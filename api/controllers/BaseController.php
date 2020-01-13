@@ -9,6 +9,7 @@
 namespace api\controllers;
 
 
+use api\behaviors\UserAuth;
 use yii\filters\auth\QueryParamAuth;
 use yii\web\Controller;
 
@@ -24,7 +25,7 @@ class BaseController extends Controller
     public function behaviors() {
         $behaviors = parent::behaviors();
         $behaviors['authenticator'] = [
-            'class' => QueryParamAuth::className()
+            'class' => UserAuth::className()
         ];
         return $behaviors;
     }
