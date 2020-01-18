@@ -34,12 +34,12 @@ return [
                 ],
             ],
         ],
-        'response' => [
-            'format' => 'json'
-        ],
-//        'errorHandler' => [
-//            'errorAction' => 'site/error',
+//        'response' => [
+//            'format' => 'json'
 //        ],
+        'errorHandler' => [
+            'errorAction' => 'site/error',
+        ],
 
         'urlManager' => [
             'enablePrettyUrl' => true,
